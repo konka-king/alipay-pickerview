@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "dist/",
+  "compileType": "mini",
+  "include": [
+    "**/*.json"
+  ],
+  "enableAppxNg": true,
+  "enableNodeModuleBabelTransform": true
+}
