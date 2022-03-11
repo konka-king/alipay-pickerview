@@ -1,5 +1,12 @@
 import { Component } from "react";
-import { View, Text, PickerView, PickerViewColumn } from "@tarojs/components";
+import {
+  View,
+  Text,
+  PickerView,
+  PickerViewColumn,
+  Input,
+  Button,
+} from "@tarojs/components";
 import "./index.scss";
 
 export default class Index extends Component {
@@ -59,6 +66,9 @@ export default class Index extends Component {
             })}
           </PickerViewColumn>
         </PickerView>
+
+        <Input className="input"></Input>
+        <Button className="fix">按钮</Button>
       </View>
     );
   }
