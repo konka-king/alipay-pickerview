@@ -8,6 +8,7 @@ import {
   Button,
 } from "@tarojs/components";
 import "./index.scss";
+import Taro from "@tarojs/taro";
 
 export default class Index extends Component {
   state = {
@@ -68,7 +69,18 @@ export default class Index extends Component {
         </PickerView>
 
         <Input className="input"></Input>
-        <Button className="fix">按钮</Button>
+        <Button
+          className="fix"
+          onClick={() => {
+            Taro.scanCode({
+              success: function (res) {
+                console.log(res);
+              },
+            });
+          }}
+        >
+          按钮
+        </Button>
       </View>
     );
   }
